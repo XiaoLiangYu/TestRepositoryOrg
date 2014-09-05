@@ -10,4 +10,5 @@
 
 @interface FATradeController : UITableViewController
 
+@property (nonatomic, strong) NSMutableArray *dataSource;
 @end

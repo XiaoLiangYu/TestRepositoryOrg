@@ -36,6 +36,7 @@
     FAJingXuanController * jingXuanController = [[FAJingXuanController alloc] init];
     jingXuanController.tabBarItem.title = @"精选";
     jingXuanController.tabBarItem.image = [UIImage imageNamed:@"JingXuan"];
+
     
     FAStrategyController * strategyController = [[FAStrategyController alloc] init];
     strategyController.tabBarItem.title = @"策略";
@@ -44,6 +45,7 @@
     FATradeController * tradeController =[[FATradeController alloc] initWithNibName:@"FATradeController" bundle:nil];
     tradeController.tabBarItem.title= @"交易";
     tradeController.tabBarItem.image = [UIImage imageNamed:@"Trade"];
+    tradeController.title = NSLocalizedStringFromTable(@"HUAJIEWeChat", @"MessageDisplayKitString", @"华捷微信");
   
     UINavigationController * navTradeController = [[UINavigationController alloc] initWithRootViewController:tradeController];
     navTradeController.tabBarItem.title = @"交易";

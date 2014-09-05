@@ -8,6 +8,7 @@
 
 #import "FATradeController.h"
 #import "FATradeViewCell.h"
+#import "FAStoreManager.h"
 
 @interface FATradeController ()
 
@@ -22,6 +23,8 @@
     UINib *nib = [UINib nibWithNibName:@"FATradeViewCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
     self.navigationItem.title = @"交易";
+    
+    self.dataSource =[[FAStoreManager shareStoreManager] getTradeConfigArray];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -52,11 +55,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString * cellIdentifier = @"tradeItemCell";
-    //测试
-    
-    
-        
-    
     FATradeViewCell * cell = (FATradeViewCell *)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if(!cell)
     {
@@ -64,6 +62,12 @@
         cell.menuLabel.text = @"sdfadfds";
     }
 
+    if(indexPath.row <self.dataSource.count)
+    {
+        NSDictionary * tradeDic = self.dataSource[indexPath.row];
+        cell.logoImage.image = [UIImage imageNamed:[tradeDic valueForKey:@"image"][0]];
+        cell.menuLabel.text = [tradeDic valueForKey:@"title"][0];
+    }
     NSLog(@"cellForRowAtIndexPath");
     
     
