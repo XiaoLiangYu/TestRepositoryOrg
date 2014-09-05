@@ -60,6 +60,11 @@
     
     self.viewControllers = [NSArray arrayWithObjects:jingXuanController,strategyController,navTradeController,messageController,moreController,nil];
     //    mainController.tabBar.tintColor = [UIColor purpleColor];
+    // setup UI Image
+    UIColor *color = [UIColor colorWithRed:0.176 green:0.576 blue:0.980 alpha:1.000];
+    [self.tabBar setBackgroundImage:[UIImage imageNamed:@"tabbarBkg"]];
+    [self.tabBar setSelectedImageTintColor:color];
+
     self.selectedIndex = 2;
 }
 
