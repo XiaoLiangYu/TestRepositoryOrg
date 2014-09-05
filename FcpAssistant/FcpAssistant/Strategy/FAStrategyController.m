@@ -20,7 +20,8 @@
      self.tabBarItem.title = @"策略";
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    
+    // testaaaaa ffff
+    // sfdf
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
