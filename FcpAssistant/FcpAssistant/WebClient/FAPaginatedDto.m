@@ -33,7 +33,7 @@
 
 - (FADummieStrategyDetailViewModel **)Items
 {
-    return _items;
+    return &_items;
 }
 
 
