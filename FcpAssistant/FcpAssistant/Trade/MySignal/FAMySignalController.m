@@ -1,34 +1,47 @@
 //
-//  FAJingXuanController.m
+//  FAMySignalController.m
 //  FcpAssistant
 //
-//  Created by YangMing on 14-9-4.
+//  Created by YangMing on 14-9-9.
 //  Copyright (c) 2014年 polaris. All rights reserved.
 //
 
-#import "FAJingXuanController.h"
+#import "FAMySignalController.h"
+#import "FAMySignalItemHeaderView.h"
+#import "FAMySignalItemViewCell.h"
 
-@interface FAJingXuanController ()
+@interface FAMySignalController ()
 
 @end
 
-@implementation FAJingXuanController
+@implementation FAMySignalController
+
+NSString* itemCellIdentifier;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    self.tabBarItem.title = @"精选";
+    [self initializeData];
+    [self registerXibFile];
+    
+    self.navigationItem.title = @"信号";
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    // test
-    //sdfsdafadf
-    ///asdfasdfdf
-    //aaaaaa
-    //bbbb
+}
+
+-(void)initializeData
+{
+    itemCellIdentifier = @"mySignalItemCell";
+}
+
+-(void)registerXibFile
+{
+    UINib *itemCellNib = [UINib nibWithNibName:@"FAMySignalItemViewCell" bundle:nil];
+    [self.tableView registerNib:itemCellNib forCellReuseIdentifier:itemCellIdentifier];
 }
 
 - (void)didReceiveMemoryWarning
@@ -37,20 +50,55 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+    
     // Return the number of sections.
-    return 1;
+    return 3;
 }
+
+#pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
-    // Return the number of rows in the section.
-    return 0;
+    return 4;
 }
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    FAMySignalItemViewCell* cell= (FAMySignalItemViewCell*)[tableView dequeueReusableCellWithIdentifier:itemCellIdentifier];
+    
+    if (!cell)
+    {
+        cell = [[FAMySignalItemViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:itemCellIdentifier];
+        cell.textLabel.font = [UIFont systemFontOfSize:15];
+        cell.detailTextLabel.font = [UIFont systemFontOfSize:12];
+    }
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 47;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 20;
+}
+
+
+- (UIView *) tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+   
+    NSArray *nib = [[NSBundle mainBundle]loadNibNamed:@"FAMySignalItemHeaderView" owner:self options:nil];
+    
+    UIView *headerView = (UIView *) [nib objectAtIndex:0];
+    headerView.frame = CGRectMake(0, 0, 320, 50);
+    return headerView;
+}
+
 
 /*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

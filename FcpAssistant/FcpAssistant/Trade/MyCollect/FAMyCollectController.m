@@ -1,34 +1,28 @@
 //
-//  FAJingXuanController.m
+//  FAMyCollectController.m
 //  FcpAssistant
 //
-//  Created by YangMing on 14-9-4.
+//  Created by YangMing on 14-9-9.
 //  Copyright (c) 2014年 polaris. All rights reserved.
 //
 
-#import "FAJingXuanController.h"
+#import "FAMyCollectController.h"
 
-@interface FAJingXuanController ()
+@interface FAMyCollectController ()
 
 @end
 
-@implementation FAJingXuanController
+@implementation FAMyCollectController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    self.tabBarItem.title = @"精选";
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    // test
-    //sdfsdafadf
-    ///asdfasdfdf
-    //aaaaaa
-    //bbbb
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,13 +35,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
 }

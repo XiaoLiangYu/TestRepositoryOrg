@@ -9,6 +9,11 @@
 #import "FATradeController.h"
 #import "FATradeViewCell.h"
 #import "FAStoreManager.h"
+#import "FAMyCollectController.h"
+#import "FAMyPurchaseController.h"
+#import "FAMyPositionController.h"
+#import "FAMyOrderBookController.h"
+#import "FAMySignalController.h"
 
 @interface FATradeController ()
 
@@ -59,8 +64,10 @@
     if(!cell)
     {
         cell = [[FATradeViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-        cell.menuLabel.text = @"sdfadfds";
     }
+    
+   
+    
 
     if(indexPath.row <self.dataSource.count)
     {
@@ -114,21 +121,47 @@
 }
 */
 
-/*
-#pragma mark - Table view delegate
 
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-    
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    switch (indexPath.row)
+    {
+        case 0:
+        {
+            [self pushNewViewController:[[FAMyCollectController alloc] init]];
+            break;
+        }
+        case 1:
+        {
+            [self pushNewViewController:[[FAMyPurchaseController alloc] init]];
+            break;
+        }
+        case 2:
+        {
+         
+            
+            [self  pushNewViewController:[[FAMyPositionController alloc] init]];
+            break;
+        }
+        case 3:
+        {
+            [self pushNewViewController:[[FAMyOrderBookController alloc] init]];
+            break;
+        }
+        case 4:
+        {
+            [self pushNewViewController:[[FAMySignalController alloc] init]];
+            break;
+        }
+        default:
+            break;
+    }
 }
-*/
+
+- (void)pushNewViewController:(UIViewController *)newViewController {
+    [self.navigationController pushViewController:newViewController animated:YES];
+}
 
 @end

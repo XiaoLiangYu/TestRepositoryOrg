@@ -1,34 +1,44 @@
 //
-//  FAJingXuanController.m
+//  FAMyPurchaseController.m
 //  FcpAssistant
 //
-//  Created by YangMing on 14-9-4.
+//  Created by YangMing on 14-9-5.
 //  Copyright (c) 2014年 polaris. All rights reserved.
 //
 
-#import "FAJingXuanController.h"
+#import "FAMyPurchaseController.h"
+#import "FAMyPurchaseDetailController.h"
+#import "FAMyPurchaseViewCell.h"
+#import "FAPurchaseDetail.h"
 
-@interface FAJingXuanController ()
+@interface FAMyPurchaseController ()
 
 @end
 
-@implementation FAJingXuanController
+@implementation FAMyPurchaseController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
-    self.tabBarItem.title = @"精选";
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    // test
-    //sdfsdafadf
-    ///asdfasdfdf
-    //aaaaaa
-    //bbbb
+    static NSString * cellIdentifier = @"purchaseDetailItem";
+    UINib *nib = [UINib nibWithNibName:@"FAMyPurchaseViewCell" bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
+    self.navigationItem.title = @"订购";
+
+    
+    NSMutableArray *dataSource = [[NSMutableArray alloc] init ];
+    
+    for (int i=0; i<10; i++)
+    {
+        FAPurchaseDetail * detail = [[FAPurchaseDetail alloc] initWithStrategyId:i];
+        detail.strategyName = [NSString stringWithFormat:@"赢家%d号",i];
+        
+        [dataSource addObject:detail];
+    }
+    
+    self.dataSource = dataSource;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,15 +51,54 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
+    return 5;
+//    return self.dataSource.count;
+}
 
-    // Return the number of rows in the section.
-    return 0;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
+
+- (void)enterDetailView
+{
+    FAMyPurchaseDetailController * detailController = [[FAMyPurchaseDetailController alloc] init];
+    [self.navigationController pushViewController:detailController animated:YES];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *cellIdentifier = @"purchaseDetailItem";
+    FAMyPurchaseViewCell *cell = (FAMyPurchaseViewCell*)[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    
+    if (!cell)
+    {
+        cell = [[FAMyPurchaseViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
+        cell.textLabel.font = [UIFont systemFontOfSize:15];
+        
+        cell.detailTextLabel.font = [UIFont systemFontOfSize:12];
+        
+    }
+    
+    if (indexPath.row < self.dataSource.count)
+    {
+        FAPurchaseDetail * purchaseDetail = (FAPurchaseDetail *)self.dataSource[indexPath.row];
+        cell.strategyName.text = purchaseDetail.strategyName;
+    }
+    
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self enterDetailView];
 }
 
 /*

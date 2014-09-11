@@ -37,7 +37,7 @@
     NSDictionary * orderBookDic = @{@"title": @"委托",@"image":@"tradeItem_OrderBook"};
     [traderConfigArray addObject:@[orderBookDic]];
     
-    NSDictionary * signalDic = @{@"title": @"信号",@"image":@"traderItem_Signal"};
+    NSDictionary * signalDic = @{@"title": @"信号",@"image":@"tradeItem_Signal"};
     [traderConfigArray addObject:@[signalDic]];
     
     return traderConfigArray;
