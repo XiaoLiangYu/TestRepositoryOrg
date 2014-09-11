@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FADummieStrategyDetailViewModel.h"
 
 // 页面传输类
 @interface FAPaginatedDto : NSObject
@@ -23,6 +24,6 @@
 
 @property(nonatomic, assign) bool HasPreviousPage;
 
-@property(nonatomic, retain) NSArray *Items;
+@property(nonatomic, retain) NSArray*   Items;
 
 @end
