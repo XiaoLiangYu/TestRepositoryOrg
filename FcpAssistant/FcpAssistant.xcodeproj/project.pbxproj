@@ -96,6 +96,11 @@
 		59EC7F0F19B83E5600972C0A /* FATradeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59EC7F0D19B83E5600972C0A /* FATradeController.xib */; };
 		59EC7F1819B8515A00972C0A /* FATradeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC7F1619B8515A00972C0A /* FATradeViewCell.m */; };
 		59EC7F1919B8515A00972C0A /* FATradeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59EC7F1719B8515A00972C0A /* FATradeViewCell.xib */; };
+		8441CF1C19C12F9E00F85E57 /* FADummieStrategyDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441CF1319C12F9E00F85E57 /* FADummieStrategyDetailViewModel.m */; };
+		8441CF1D19C12F9E00F85E57 /* FAJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441CF1519C12F9E00F85E57 /* FAJSONSerialization.m */; };
+		8441CF1E19C12F9E00F85E57 /* FAPaginatedDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441CF1719C12F9E00F85E57 /* FAPaginatedDto.m */; };
+		8441CF1F19C12F9E00F85E57 /* FAWinLossViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441CF1919C12F9E00F85E57 /* FAWinLossViewModel.m */; };
+		8441CF2019C12F9E00F85E57 /* RMMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8441CF1B19C12F9E00F85E57 /* RMMapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +241,16 @@
 		59EC7F1519B8515A00972C0A /* FATradeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FATradeViewCell.h; path = Trade/FATradeViewCell.h; sourceTree = "<group>"; };
 		59EC7F1619B8515A00972C0A /* FATradeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FATradeViewCell.m; path = Trade/FATradeViewCell.m; sourceTree = "<group>"; };
 		59EC7F1719B8515A00972C0A /* FATradeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FATradeViewCell.xib; path = Trade/FATradeViewCell.xib; sourceTree = "<group>"; };
+		8441CF1219C12F9E00F85E57 /* FADummieStrategyDetailViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FADummieStrategyDetailViewModel.h; path = WebClient/FADummieStrategyDetailViewModel.h; sourceTree = "<group>"; };
+		8441CF1319C12F9E00F85E57 /* FADummieStrategyDetailViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FADummieStrategyDetailViewModel.m; path = WebClient/FADummieStrategyDetailViewModel.m; sourceTree = "<group>"; };
+		8441CF1419C12F9E00F85E57 /* FAJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAJSONSerialization.h; path = WebClient/FAJSONSerialization.h; sourceTree = "<group>"; };
+		8441CF1519C12F9E00F85E57 /* FAJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAJSONSerialization.m; path = WebClient/FAJSONSerialization.m; sourceTree = "<group>"; };
+		8441CF1619C12F9E00F85E57 /* FAPaginatedDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAPaginatedDto.h; path = WebClient/FAPaginatedDto.h; sourceTree = "<group>"; };
+		8441CF1719C12F9E00F85E57 /* FAPaginatedDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAPaginatedDto.m; path = WebClient/FAPaginatedDto.m; sourceTree = "<group>"; };
+		8441CF1819C12F9E00F85E57 /* FAWinLossViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAWinLossViewModel.h; path = WebClient/FAWinLossViewModel.h; sourceTree = "<group>"; };
+		8441CF1919C12F9E00F85E57 /* FAWinLossViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAWinLossViewModel.m; path = WebClient/FAWinLossViewModel.m; sourceTree = "<group>"; };
+		8441CF1A19C12F9E00F85E57 /* RMMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RMMapper.h; path = WebClient/RMMapper.h; sourceTree = "<group>"; };
+		8441CF1B19C12F9E00F85E57 /* RMMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RMMapper.m; path = WebClient/RMMapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -755,6 +770,23 @@
 			name = ImageSource;
 			sourceTree = "<group>";
 		};
+		8441CF1119C12F7F00F85E57 /* WebClient */ = {
+			isa = PBXGroup;
+			children = (
+				8441CF1219C12F9E00F85E57 /* FADummieStrategyDetailViewModel.h */,
+				8441CF1319C12F9E00F85E57 /* FADummieStrategyDetailViewModel.m */,
+				8441CF1419C12F9E00F85E57 /* FAJSONSerialization.h */,
+				8441CF1519C12F9E00F85E57 /* FAJSONSerialization.m */,
+				8441CF1619C12F9E00F85E57 /* FAPaginatedDto.h */,
+				8441CF1719C12F9E00F85E57 /* FAPaginatedDto.m */,
+				8441CF1819C12F9E00F85E57 /* FAWinLossViewModel.h */,
+				8441CF1919C12F9E00F85E57 /* FAWinLossViewModel.m */,
+				8441CF1A19C12F9E00F85E57 /* RMMapper.h */,
+				8441CF1B19C12F9E00F85E57 /* RMMapper.m */,
+			);
+			name = WebClient;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -914,6 +946,7 @@
 				593EA69B19BFF5A300E9F2BC /* FAMyPurchaseDetailOrderHeaderView.m in Sources */,
 				59EC7F0E19B83E5600972C0A /* FATradeController.m in Sources */,
 				59EC7F1819B8515A00972C0A /* FATradeViewCell.m in Sources */,
+				8441CF2019C12F9E00F85E57 /* RMMapper.m in Sources */,
 				59EC7EE919B8129200972C0A /* FAMainController.m in Sources */,
 				591EA2DF19BEDE4F00EED52C /* FAMyPurchaseDetailTopViewCell.m in Sources */,
 				59137A3419BE8BC3001F4977 /* FAMyCollectController.m in Sources */,
@@ -926,6 +959,7 @@
 				593EA6AE19BFF9F100E9F2BC /* FAMyPurchaseDetailOrderViewCell.m in Sources */,
 				598F291919B9D1710078C6C6 /* FAMyPurchaseController.m in Sources */,
 				59EC7EE419B8122100972C0A /* FAStrategyController.m in Sources */,
+				8441CF1D19C12F9E00F85E57 /* FAJSONSerialization.m in Sources */,
 				59EC7F0419B82C0600972C0A /* FAMessageController.m in Sources */,
 				593EA69619BFF50700E9F2BC /* FAMyPurchaseDetailSignalHeaderView.m in Sources */,
 				5903747019B80E8200F5B0C3 /* FAAppDelegate.m in Sources */,
