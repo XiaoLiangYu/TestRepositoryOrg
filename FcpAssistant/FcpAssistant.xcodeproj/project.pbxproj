@@ -25,6 +25,12 @@
 		5916F34A19B95FA600BE7D1D /* tabbarBkg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5916F34519B95FA600BE7D1D /* tabbarBkg@2x.png */; };
 		5916F34B19B95FA600BE7D1D /* Message@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5916F34619B95FA600BE7D1D /* Message@2x.png */; };
 		5916F34D19B9617900BE7D1D /* More@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5916F34C19B9617900BE7D1D /* More@2x.png */; };
+		598F290519B9AB260078C6C6 /* FAStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 598F290419B9AB260078C6C6 /* FAStoreManager.m */; };
+		598F290C19B9AED10078C6C6 /* tradeItem_Collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 598F290719B9AED10078C6C6 /* tradeItem_Collect@2x.png */; };
+		598F290D19B9AED10078C6C6 /* tradeItem_Order@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 598F290819B9AED10078C6C6 /* tradeItem_Order@2x.png */; };
+		598F290E19B9AED10078C6C6 /* tradeItem_OrderBook@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 598F290919B9AED10078C6C6 /* tradeItem_OrderBook@2x.png */; };
+		598F290F19B9AED10078C6C6 /* tradeItem_Position@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 598F290A19B9AED10078C6C6 /* tradeItem_Position@2x.png */; };
+		598F291019B9AED10078C6C6 /* tradeItem_Signal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 598F290B19B9AED10078C6C6 /* tradeItem_Signal@2x.png */; };
 		59EC7EE419B8122100972C0A /* FAStrategyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC7EE219B8122100972C0A /* FAStrategyController.m */; };
 		59EC7EE519B8122100972C0A /* FAStrategyController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59EC7EE319B8122100972C0A /* FAStrategyController.xib */; };
 		59EC7EE919B8129200972C0A /* FAMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC7EE719B8129200972C0A /* FAMainController.m */; };
@@ -79,6 +85,13 @@
 		5916F34519B95FA600BE7D1D /* tabbarBkg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tabbarBkg@2x.png"; path = "ImageSource/tabBarImage/tabbarBkg@2x.png"; sourceTree = "<group>"; };
 		5916F34619B95FA600BE7D1D /* Message@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Message@2x.png"; path = "ImageSource/tabBarImage/Message@2x.png"; sourceTree = "<group>"; };
 		5916F34C19B9617900BE7D1D /* More@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "More@2x.png"; path = "ImageSource/tabBarImage/More@2x.png"; sourceTree = "<group>"; };
+		598F290319B9AB260078C6C6 /* FAStoreManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAStoreManager.h; path = DataManager/FAStoreManager.h; sourceTree = "<group>"; };
+		598F290419B9AB260078C6C6 /* FAStoreManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAStoreManager.m; path = DataManager/FAStoreManager.m; sourceTree = "<group>"; };
+		598F290719B9AED10078C6C6 /* tradeItem_Collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tradeItem_Collect@2x.png"; path = "ImageSource/tradeItemImage/tradeItem_Collect@2x.png"; sourceTree = "<group>"; };
+		598F290819B9AED10078C6C6 /* tradeItem_Order@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tradeItem_Order@2x.png"; path = "ImageSource/tradeItemImage/tradeItem_Order@2x.png"; sourceTree = "<group>"; };
+		598F290919B9AED10078C6C6 /* tradeItem_OrderBook@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tradeItem_OrderBook@2x.png"; path = "ImageSource/tradeItemImage/tradeItem_OrderBook@2x.png"; sourceTree = "<group>"; };
+		598F290A19B9AED10078C6C6 /* tradeItem_Position@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tradeItem_Position@2x.png"; path = "ImageSource/tradeItemImage/tradeItem_Position@2x.png"; sourceTree = "<group>"; };
+		598F290B19B9AED10078C6C6 /* tradeItem_Signal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tradeItem_Signal@2x.png"; path = "ImageSource/tradeItemImage/tradeItem_Signal@2x.png"; sourceTree = "<group>"; };
 		59EC7EE119B8122100972C0A /* FAStrategyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAStrategyController.h; path = Strategy/FAStrategyController.h; sourceTree = "<group>"; };
 		59EC7EE219B8122100972C0A /* FAStrategyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAStrategyController.m; path = Strategy/FAStrategyController.m; sourceTree = "<group>"; };
 		59EC7EE319B8122100972C0A /* FAStrategyController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FAStrategyController.xib; path = Strategy/FAStrategyController.xib; sourceTree = "<group>"; };
@@ -229,6 +242,27 @@
 			name = tabBarImage;
 			sourceTree = "<group>";
 		};
+		598F290219B9AAB10078C6C6 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				598F290319B9AB260078C6C6 /* FAStoreManager.h */,
+				598F290419B9AB260078C6C6 /* FAStoreManager.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		598F290619B9AEB40078C6C6 /* tradeItemImage */ = {
+			isa = PBXGroup;
+			children = (
+				598F290719B9AED10078C6C6 /* tradeItem_Collect@2x.png */,
+				598F290819B9AED10078C6C6 /* tradeItem_Order@2x.png */,
+				598F290919B9AED10078C6C6 /* tradeItem_OrderBook@2x.png */,
+				598F290A19B9AED10078C6C6 /* tradeItem_Position@2x.png */,
+				598F290B19B9AED10078C6C6 /* tradeItem_Signal@2x.png */,
+			);
+			name = tradeItemImage;
+			sourceTree = "<group>";
+		};
 		59EC7E9319B80FB000972C0A /* Strategy */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +319,7 @@
 		59EC7F1A19B8593600972C0A /* ImageSource */ = {
 			isa = PBXGroup;
 			children = (
+				598F290619B9AEB40078C6C6 /* tradeItemImage */,
 				5916F33519B95A4800BE7D1D /* tabBarImage */,
 			);
 			name = ImageSource;
@@ -388,13 +423,18 @@
 				59EC7F1919B8515A00972C0A /* FATradeViewCell.xib in Resources */,
 				5903746A19B80E8200F5B0C3 /* InfoPlist.strings in Resources */,
 				59EC7F0F19B83E5600972C0A /* FATradeController.xib in Resources */,
+				598F290D19B9AED10078C6C6 /* tradeItem_Order@2x.png in Resources */,
+				598F290E19B9AED10078C6C6 /* tradeItem_OrderBook@2x.png in Resources */,
 				5916F34819B95FA600BE7D1D /* Strategy@2x.png in Resources */,
 				59EC7EEA19B8129200972C0A /* FAMainController.xib in Resources */,
 				59EC7EE519B8122100972C0A /* FAStrategyController.xib in Resources */,
 				59EC7F0519B82C0600972C0A /* FAMessageController.xib in Resources */,
+				598F290C19B9AED10078C6C6 /* tradeItem_Collect@2x.png in Resources */,
 				5916F34919B95FA600BE7D1D /* Trade@2x.png in Resources */,
 				5916F34A19B95FA600BE7D1D /* tabbarBkg@2x.png in Resources */,
+				598F290F19B9AED10078C6C6 /* tradeItem_Position@2x.png in Resources */,
 				59EC7F0019B82BBF00972C0A /* FAMoreController.xib in Resources */,
+				598F291019B9AED10078C6C6 /* tradeItem_Signal@2x.png in Resources */,
 				59EC7EF519B82B4600972C0A /* FAJingXuanController.xib in Resources */,
 				5903747219B80E8200F5B0C3 /* Images.xcassets in Resources */,
 				5916F34719B95FA600BE7D1D /* JingXuan@2x.png in Resources */,
@@ -416,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				598F290519B9AB260078C6C6 /* FAStoreManager.m in Sources */,
 				5903746C19B80E8200F5B0C3 /* main.m in Sources */,
 				59EC7F0E19B83E5600972C0A /* FATradeController.m in Sources */,
 				59EC7F1819B8515A00972C0A /* FATradeViewCell.m in Sources */,
