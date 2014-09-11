@@ -11,6 +11,14 @@
 
 // 页面传输类
 @interface FAPaginatedDto : NSObject
+{
+@public
+    FADummieStrategyDetailViewModel *_items[64];
+}
+
+- (void)setItems:(FADummieStrategyDetailViewModel **)newItems;
+
+- (FADummieStrategyDetailViewModel **)Items;
 
 @property(nonatomic, assign) int PageIndex;
 
@@ -24,6 +32,6 @@
 
 @property(nonatomic, assign) bool HasPreviousPage;
 
-@property(nonatomic, retain) NSArray*   Items;
+//@property(nonatomic, retain) NSARRAY Items;
 
 @end

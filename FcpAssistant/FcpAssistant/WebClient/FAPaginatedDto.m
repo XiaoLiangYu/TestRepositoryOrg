@@ -17,7 +17,24 @@
 @synthesize TotalPageCount;
 @synthesize HasNextPage;
 @synthesize HasPreviousPage;
-@synthesize Items;
+//@synthesize Items;
+
+
+- (void)setItems:(FADummieStrategyDetailViewModel **)newItems
+{
+    if(_items != NULL)
+    {
+        for(int i = 0; i < 64; i++)
+        {
+            _items[i] = newItems[i];
+        }
+    }
+}
+
+- (FADummieStrategyDetailViewModel **)Items
+{
+    return _items;
+}
 
 
 @end

@@ -62,17 +62,22 @@ int main(int argc, char * argv[])
                  NSLog(@"ArrayJSON.HasNextPage = %i", next);
                  NSLog(@"ArrayJSON = %@", json);*/
                  
+                 
+                 /*
+                  FAPaginatedDto *page = [[FAPaginatedDto alloc] init];
+                  page = [FAJSONSerialization toObject:@"FAPaginatedDto" fromData:data];
+                  
+                  page.Items = [FAJSONSerialization toArray:@"FADummieStrategyDetailViewModel" fromData:page.Items];
+                  
+                  FADummieStrategyDetailViewModel *mode = [[FADummieStrategyDetailViewModel alloc] init];
+                  mode = page.Items[0];
+                  mode.WinLosses = [FAJSONSerialization toArray:@"FAWinLossViewModel" fromData:mode.WinLosses];
+                  */
+                 
                  FAPaginatedDto *page = [[FAPaginatedDto alloc] init];
                  page = [FAJSONSerialization toObject:@"FAPaginatedDto" fromData:data];
                  
-                 page.Items = [FAJSONSerialization toArray:@"FADummieStrategyDetailViewModel" fromData:page.Items];
-                 
-                 FADummieStrategyDetailViewModel *mode = [[FADummieStrategyDetailViewModel alloc] init];
-                 mode = page.Items[0];
-                 mode.WinLosses = [FAJSONSerialization toArray:@"FAWinLossViewModel" fromData:mode.WinLosses];
-                 
-                 
-                 NSLog(@"end.");                 
+                 NSLog(@"end.");
              }
              else if(connectionError != nil){
                  NSLog(@"Error hanppend = %@", connectionError);
