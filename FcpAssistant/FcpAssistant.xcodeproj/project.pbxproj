@@ -96,6 +96,11 @@
 		59EC7F0F19B83E5600972C0A /* FATradeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59EC7F0D19B83E5600972C0A /* FATradeController.xib */; };
 		59EC7F1819B8515A00972C0A /* FATradeViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59EC7F1619B8515A00972C0A /* FATradeViewCell.m */; };
 		59EC7F1919B8515A00972C0A /* FATradeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59EC7F1719B8515A00972C0A /* FATradeViewCell.xib */; };
+		84F8749D19C839CA00CBBB1A /* FAHttpHead.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F8749A19C839CA00CBBB1A /* FAHttpHead.m */; };
+		84F8749E19C839CA00CBBB1A /* FAHttpUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F8749C19C839CA00CBBB1A /* FAHttpUtility.m */; };
+		84F874A519C83A2200CBBB1A /* FAJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F874A019C83A2200CBBB1A /* FAJSONSerialization.m */; };
+		84F874A619C83A2200CBBB1A /* Jastor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F874A219C83A2200CBBB1A /* Jastor.m */; };
+		84F874A719C83A2200CBBB1A /* JastorRuntimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F874A419C83A2200CBBB1A /* JastorRuntimeHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +241,16 @@
 		59EC7F1519B8515A00972C0A /* FATradeViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FATradeViewCell.h; path = Trade/FATradeViewCell.h; sourceTree = "<group>"; };
 		59EC7F1619B8515A00972C0A /* FATradeViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FATradeViewCell.m; path = Trade/FATradeViewCell.m; sourceTree = "<group>"; };
 		59EC7F1719B8515A00972C0A /* FATradeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FATradeViewCell.xib; path = Trade/FATradeViewCell.xib; sourceTree = "<group>"; };
+		84F8749919C839CA00CBBB1A /* FAHttpHead.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAHttpHead.h; path = Http/FAHttpHead.h; sourceTree = "<group>"; };
+		84F8749A19C839CA00CBBB1A /* FAHttpHead.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAHttpHead.m; path = Http/FAHttpHead.m; sourceTree = "<group>"; };
+		84F8749B19C839CA00CBBB1A /* FAHttpUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAHttpUtility.h; path = Http/FAHttpUtility.h; sourceTree = "<group>"; };
+		84F8749C19C839CA00CBBB1A /* FAHttpUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAHttpUtility.m; path = Http/FAHttpUtility.m; sourceTree = "<group>"; };
+		84F8749F19C83A2200CBBB1A /* FAJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FAJSONSerialization.h; path = Json/FAJSONSerialization.h; sourceTree = "<group>"; };
+		84F874A019C83A2200CBBB1A /* FAJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FAJSONSerialization.m; path = Json/FAJSONSerialization.m; sourceTree = "<group>"; };
+		84F874A119C83A2200CBBB1A /* Jastor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Jastor.h; path = Json/Jastor.h; sourceTree = "<group>"; };
+		84F874A219C83A2200CBBB1A /* Jastor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Jastor.m; path = Json/Jastor.m; sourceTree = "<group>"; };
+		84F874A319C83A2200CBBB1A /* JastorRuntimeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JastorRuntimeHelper.h; path = Json/JastorRuntimeHelper.h; sourceTree = "<group>"; };
+		84F874A419C83A2200CBBB1A /* JastorRuntimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JastorRuntimeHelper.m; path = Json/JastorRuntimeHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +310,8 @@
 		5903746519B80E8200F5B0C3 /* FcpAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				84F8749819C8388300CBBB1A /* Json */,
+				84F8749719C8387A00CBBB1A /* Http */,
 				59137A4F19BEA371001F4977 /* Model */,
 				598F290219B9AAB10078C6C6 /* DataManager */,
 				59EC7F1A19B8593600972C0A /* ImageSource */,
@@ -755,6 +772,30 @@
 			name = ImageSource;
 			sourceTree = "<group>";
 		};
+		84F8749719C8387A00CBBB1A /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				84F8749919C839CA00CBBB1A /* FAHttpHead.h */,
+				84F8749A19C839CA00CBBB1A /* FAHttpHead.m */,
+				84F8749B19C839CA00CBBB1A /* FAHttpUtility.h */,
+				84F8749C19C839CA00CBBB1A /* FAHttpUtility.m */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		84F8749819C8388300CBBB1A /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				84F8749F19C83A2200CBBB1A /* FAJSONSerialization.h */,
+				84F874A019C83A2200CBBB1A /* FAJSONSerialization.m */,
+				84F874A119C83A2200CBBB1A /* Jastor.h */,
+				84F874A219C83A2200CBBB1A /* Jastor.m */,
+				84F874A319C83A2200CBBB1A /* JastorRuntimeHelper.h */,
+				84F874A419C83A2200CBBB1A /* JastorRuntimeHelper.m */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -904,10 +945,12 @@
 				59137A3919BE8C10001F4977 /* FAMyPositionController.m in Sources */,
 				5903746C19B80E8200F5B0C3 /* main.m in Sources */,
 				593EA6E519C0491900E9F2BC /* FAMySignalItemViewCell.m in Sources */,
+				84F874A719C83A2200CBBB1A /* JastorRuntimeHelper.m in Sources */,
 				591EA2EA19BEED8400EED52C /* FAMyPurchaseDetailPositionHeaderView.m in Sources */,
 				59137A5219BEA7AF001F4977 /* FAPurchaseDetail.m in Sources */,
 				593EA6DC19C038EE00E9F2BC /* FAMyPositionStrategyViewCell.m in Sources */,
 				59137A4819BE9800001F4977 /* FAMyPurchaseViewCell.m in Sources */,
+				84F874A619C83A2200CBBB1A /* Jastor.m in Sources */,
 				593EA6F519C04DDF00E9F2BC /* FAMyOrderBookItemHeaderView.m in Sources */,
 				593EA6CC19C0385900E9F2BC /* FAMyPositionStrategyHeaderView.m in Sources */,
 				59137A4319BE8C57001F4977 /* FAMySignalController.m in Sources */,
@@ -920,6 +963,7 @@
 				593EA6A919BFF9A300E9F2BC /* FAMyPurchaseDetailSignalViewCell.m in Sources */,
 				59EC7EF419B82B4600972C0A /* FAJingXuanController.m in Sources */,
 				59EC7EFF19B82BBF00972C0A /* FAMoreController.m in Sources */,
+				84F874A519C83A2200CBBB1A /* FAJSONSerialization.m in Sources */,
 				593EA6FE19C05B2900E9F2BC /* FAMyCollectViewCell.m in Sources */,
 				593EA6E919C0495300E9F2BC /* FAMySignalItemHeaderView.m in Sources */,
 				593EA6A419BFF94000E9F2BC /* FAMyPurchaseDetailPositionViewCell.m in Sources */,
@@ -929,6 +973,8 @@
 				59EC7F0419B82C0600972C0A /* FAMessageController.m in Sources */,
 				593EA69619BFF50700E9F2BC /* FAMyPurchaseDetailSignalHeaderView.m in Sources */,
 				5903747019B80E8200F5B0C3 /* FAAppDelegate.m in Sources */,
+				84F8749E19C839CA00CBBB1A /* FAHttpUtility.m in Sources */,
+				84F8749D19C839CA00CBBB1A /* FAHttpHead.m in Sources */,
 				593EA6C919C0383000E9F2BC /* FAMyPositionTotalHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
