@@ -9,10 +9,6 @@
 #import <UIKit/UIKit.h>
 
 #import "FAAppDelegate.h"
-#import "FAPaginatedDto.h"
-#import "FAWinLossViewModel.h"
-#import "FADummieStrategyDetailViewModel.h"
-#import "FAJSONSerialization.h"
 
 int main(int argc, char * argv[])
 {
@@ -74,8 +70,8 @@ int main(int argc, char * argv[])
                   mode.WinLosses = [FAJSONSerialization toArray:@"FAWinLossViewModel" fromData:mode.WinLosses];
                   */
                  
-                 FAPaginatedDto *page = [[FAPaginatedDto alloc] init];
-                 page = [FAJSONSerialization toObject:@"FAPaginatedDto" fromData:data];
+//                 FAPaginatedDto *page = [[FAPaginatedDto alloc] init];
+//                 page = [FAJSONSerialization toObject:@"FAPaginatedDto" fromData:data];
                  
                  NSLog(@"end.");
              }
